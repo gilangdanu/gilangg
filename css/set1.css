@@ -43,8 +43,7 @@
 
 .grid figure figcaption {
 	padding: 2em;
-	color: #fff;
-	text-transform: uppercase;
+	color: #FF851B;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -445,7 +444,7 @@ figure.effect-romeo:hover p {
 /*---------------*/
 
 figure.effect-layla {
-	background: #18a367;
+	background: #001e1F;
 }
 
 figure.effect-layla img {
@@ -468,8 +467,8 @@ figure.effect-layla figcaption::before {
 	right: 30px;
 	bottom: 50px;
 	left: 30px;
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
+	border-top: 1px solid #FF851B;
+	border-bottom: 1px solid #FF851B;
 	-webkit-transform: scale(0,1);
 	transform: scale(0,1);
 	-webkit-transform-origin: 0 0;
@@ -481,8 +480,8 @@ figure.effect-layla figcaption::after {
 	right: 50px;
 	bottom: 30px;
 	left: 50px;
-	border-right: 1px solid #fff;
-	border-left: 1px solid #fff;
+	border-right: 1px solid #FF851B;
+	border-left: 1px solid #FF851B;
 	-webkit-transform: scale(1,0);
 	transform: scale(1,0);
 	-webkit-transform-origin: 100% 0;

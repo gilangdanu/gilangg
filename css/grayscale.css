@@ -8,8 +8,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: "Hind",sans-serif;
-    color: #0074D9;
-    background-color: #fff;
+    color: #FF851B;
+    background-color: #2E4056;
 }
 
 .body-sexy {
@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
+    margin: 0 0 15px;
     font-family: "Lato",sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
@@ -45,14 +45,14 @@ p {
 
 @media(min-width:768px) {
     p {
-        margin: 0 0 35px;
+        margin: 0 0 15px;
         font-size: 20px;
         line-height: 1.6;
     }
 }
 
 a {
-    color: #83c3e7;
+    color: #FF851B;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -61,7 +61,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #0074D9;
+    color: #F6A663;
 }
 
 .light {
@@ -74,8 +74,8 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #0074D9;
-    background-color: #FFf;
+    color: #2E4056;
+    background-color: #FF851B;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -115,10 +115,10 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #0074D9;
+    border: 2px solid #2E4056;
     border-radius: 100%!important;
     font-size: 40px;
-    color: #0074D9;
+    color: #2E4056;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -128,7 +128,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #0074D9;
+    color: #2E4056;
     background: rgba(255,255,255,.1);
 }
 
@@ -231,17 +231,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #0074D9;
-    color: #0074D9;
+    border: 1px solid #FF851B;
+    color: #FF851B;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #0074D9;
+    border: 1px solid #FF851B;
     outline: 0;
-    color: #fff;
-    background-color: #0074D9;
+    color: #2E4056;
+    background-color: #FF851B;
 }
 
 ul.banner-social-buttons {
@@ -267,10 +267,12 @@ ul.banner-social-buttons {
 }
 
 footer {
+	
     padding: 50px 0;
 }
 
 footer p {
+	font-size: 1em;
     margin: 0;
 }
 
