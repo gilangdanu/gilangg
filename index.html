@@ -15,11 +15,11 @@
   <img class="image" src="images/bg.svg">
 
 	<div id="goyang">
-  <button onClick="window.location='dance.html';" class="_button _button-1 animated pulse" class="masterTooltip" title="Sexy dance time, baby!">5 </button>
-  <button onClick="window.location='http://goodreads.com/gilangdanu';" class="_button _button-2 animated-2 pulse" class="masterTooltip" title="My bookshelf on Goodreads">4 </button>
-  <button onClick="window.location='http://plastikal.tumblr.com';" class="_button _button-3 animated pulse" class="masterTooltip" title="My scale model showcase">3 </button>
-  <button onClick="window.location='http://gilangdanu.com/blog/';" class="_button _button-4 animated-2 pulse" class="masterTooltip" title="My blog on github, published with the almighty Hubpress">2 </button>
-  <button onClick="window.location='portfolio.html';" class="_button _button-5 animated pulse" class="masterTooltip" title="My illustration portfolio">1 </button>
+  <button onClick="window.location='dance.html';" class="_button _button-1 animated pulse tooltip">5<span class="tooltip-content">It's sexy dance time, baby!</span></button>
+  <button onClick="window.location='http://goodreads.com/gilangdanu';" class="_button _button-2 animated-2 pulse tooltip">4 <span class="tooltip-content">My book reviews on Goodreads</span></button>
+  <button onClick="window.location='http://plastikal.tumblr.com';" class="_button _button-3 animated pulse tooltip">3 <span class="tooltip-content">My scale model showcase!</span></button>
+  <button onClick="window.location='http://gilangdanu.com/blog/';" class="_button _button-4 animated-2 pulse tooltip">2 <span class="tooltip-content"> My blog on github, powered by Hubpress</span></button>
+  <button onClick="window.location='portfolio.html';" class="_button _button-5 animated pulse tooltip">1 <span class="tooltip-content"> My illustration portfolio</span></button>
 	</div>
 	
   <div class="text text-2">
@@ -40,29 +40,6 @@
 
   <script src="js/jquery-min.js"></script>
   <script src="js/rimages.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-        // Tooltip only Text
-        $('.masterTooltip').hover(function(){
-                // Hover over code
-                var title = $(this).attr('title');
-                $(this).data('tipText', title).removeAttr('title');
-                $('<p class="tooltip"></p>')
-                .text(title)
-                .appendTo('body')
-                .fadeIn('slow');
-        }, function() {
-                // Hover out code
-                $(this).attr('title', $(this).data('tipText'));
-                $('.tooltip').remove();
-        }).mousemove(function(e) {
-                var mousex = e.pageX + 20; //Get X coordinates
-                var mousey = e.pageY + 10; //Get Y coordinates
-                $('.tooltip')
-                .css({ top: mousey, left: mousex })
-        });
-});
-</script>
+
 </body>
 </html>
