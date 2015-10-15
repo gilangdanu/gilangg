@@ -38,6 +38,21 @@ body {
   line-height: 1.38;
 }
 
+/* unvisited link */
+a:link {
+    color: #FFF;
+}
+
+/* visited link */
+a:visited {
+    color: darkgray;
+}
+
+/* selected link */
+a:active {
+    color: cornsilk;
+}
+
 .text-2 p {
   margin-bottom: 1em;
 }
@@ -97,6 +112,73 @@ body {
   color: rgb(0, 0, 0);
 }
 
+/*
+ * Animation configurations ( duration and fill mode )
+*/
+.animated { 
+ 	-webkit-animation-name: bounceIn;
+ 	-webkit-animation-duration: 5s;
+ 	-webkit-animation-iteration-count: infinite;
+ 	-webkit-animation-timing-function: ease-out;
+ 	-webkit-animation-fill-mode: forwards;
+	
+ 	animation-name: bounceIn;
+ 	animation-duration: 5s;
+ 	animation-iteration-count: infinite;
+ 	animation-timing-function: ease-out;
+ 	animation-fill-mode: forwards;
+} 
+
+.animated-2 { 
+ 	-webkit-animation-name: bounceIn;
+ 	-webkit-animation-duration: 3s;
+ 	-webkit-animation-iteration-count: infinite;
+ 	-webkit-animation-timing-function: ease;
+ 	-webkit-animation-fill-mode: forwards;
+	
+ 	animation-name: bounceIn;
+ 	animation-duration: 3s;
+ 	animation-iteration-count: infinite;
+ 	animation-timing-function: ease;
+ 	animation-fill-mode: forwards;
+} 
+
+
+/*
+ * Pulse animation
+*/
+  
+@-webkit-keyframes pulse { 
+    0% { -webkit-transform: scale(1); } 
+    50% { -webkit-transform: scale(1.5); } 
+    100% { -webkit-transform: scale(1); } 
+} 
+@keyframes pulse { 
+    0% { transform: scale(1); } 
+    50% { transform: scale(1.5); } 
+    100% { transform: scale(1); } 
+} 
+.pulse { 
+    -webkit-animation-name: pulse; 
+    animation-name: pulse; 
+}
+/*
+ * Flash animation
+*/
+  
+@-webkit-keyframes flash { 
+    0%, 50%, 100% {opacity: 1;} 
+    25%, 75% {opacity: 0;} 
+} 
+@keyframes flash { 
+    0%, 50%, 100% {opacity: 1;} 
+    25%, 75% {opacity: 0;} 
+} 
+.flash { 
+    -webkit-animation-name: flash; 
+    animation-name: flash; 
+}
+
 ._button-1 {
   position: absolute;
   top: 585px;
@@ -104,7 +186,7 @@ body {
   z-index: 5;
   width: 3.4895833333%;
   height: 67px;
-  border-radius: 80px;
+  border-radius: 50%;
   background-color: rgb(217, 52, 82);
   font-size: 2.25em;
   font-weight: 700;
@@ -172,7 +254,8 @@ body {
 ._button-3:hover,
 ._button-4:hover,
 ._button-5:hover {
-  background-color: rgb(73, 99, 237);
+  background-color: #FF1919;
+  -webkit-animation: none;
 }
 
 ._button-6 {
@@ -229,6 +312,14 @@ body {
   font-size: 1em;
   font-weight: 400;
   color: #fff;
+}
+
+._button-6:hover,
+._button-7:hover,
+._button-8:hover,
+._button-9:hover {
+background-color: #196394;
+  
 }
 
 .text em {
@@ -387,6 +478,8 @@ body {
     margin-top: 126px;
     margin-left: 27.07813%;
   }
+	
+	
 
   ._button-1 {
     top: 544px;
@@ -398,27 +491,28 @@ body {
   ._button-2 {
     top: 628px;
     left: 69.6%;
-    width: 3.3125%;
-    height: 56px;
+    width: 3%;
+    height: 47px;
   }
 
   ._button-3 {
     top: 798px;
     left: 55.9999999999%;
-    width: 3.5%;
-    height: 54px;
+    width: 3%;
+    height: 47px;
   }
 
   ._button-4 {
     top: 460px;
     left: 57.625%;
-    width: 3.5%;
-    height: 55px;
+    width: 3%;
+    height: 47px;
   }
 
   ._button-5 {
     left: 37.5625%;
     width: 3.1875%;
+    width: 3%;
     height: 47px;
   }
 
