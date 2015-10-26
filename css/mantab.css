@@ -9,6 +9,7 @@
   margin: 0 auto;
   align-content:center;
 }
+
 .kontainer-gede:after {
   content: "";
   display: table;
@@ -18,6 +19,14 @@
 .biarketengah {
   text-align: center;
 }
+
+@media screen and (max-width:768x;)
+      {
+        .biarketengah
+         {
+           max-width: 768px; 
+         }
+      }    
 
 .kontainer-kota {
   display: block;
@@ -32,6 +41,23 @@
   max-width: 100%;
   height: auto;
 }
+
+ @media screen and (min-width:768x;)
+      {
+        .kontainer-kota > img
+         {
+           max-width: 768px; 
+         }
+      }       
+
+ @media screen and (min-width:768x;)
+      {
+        .kontainer-kota
+         {
+           max-width: 768px; 
+         }
+      }    
+
 
 .kontainertombol {
   width: 100%;
@@ -101,6 +127,21 @@
     @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
     @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
     @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+
+ @media screen and (min-width:768px;)
+      {
+        .tombol-nyala
+         {
+           position: absolute;
+           width: 100%; 
+         }
+        .tombol-nyala2
+         {
+           position: absolute;
+           width: 100%; 
+         }
+      }     
 
 /*
  * Tooltip
