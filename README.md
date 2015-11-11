@@ -1,2 +1,4 @@
 # gilangdanu.github.io
-**testing out github pages 
+**Testing out github pages** 
+
+This is a personal page for any kind of web experimenting.

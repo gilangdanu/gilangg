@@ -43,23 +43,6 @@
   object-fit: contain;
 }
 
- @media screen and (min-width:768x;)
-      {
-        .kontainer-kota > img
-         {
-           max-width: 768px; 
-         }
-      }       
-
- @media screen and (min-width:768x;)
-      {
-        .kontainer-kota
-         {
-           max-width: 768px; 
-         }
-      }    
-
-
 .kontainertombol {
   width: 100%;
   max-width: 1650px;
@@ -130,20 +113,55 @@
     @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 
 
- @media screen and (min-width:768px;)
-      {
-        .tombol-nyala
-         {
-           position: absolute;
-           width: 100%; 
+ @media screen and (min-width:200px) and (max-width:480px) {
+	 
+	 	.kontainer-kota {
+		display: none; 
+		
+	 	}
+        .tombol-nyala {
+           display: none;
          }
         .tombol-nyala2
          {
-           position: absolute;
-           width: 100%; 
+           display: none;
          }
+	 
+	 .menukecil > ul {
+		 list-style: none;
+		 margin-left: auto;
+		 margin-right: auto;
+	 }
+	 
+	 #teks {
+		 margin-top: 1em;
+		 margin-bottom:2em;
+		 padding-right: .5em;
+		 padding-left: .5em;
+	 }
+	 
+	 #hello  > p {
+		 margin: 2, 0.5, 1, 0.5;
+		 padding: 0;
+	 }
+	 
+	 #teksgede > p {
+		 font-size: 1.2rem;
+		 margin: 0;
+		 padding: 0;
+	 }
+	 
       }     
 
+@media screen and (min-width:480px) and (max-width:2560px) {
+
+	.menukecil {
+		display: none;
+	}
+	#keterangan {
+		 display: none;
+	 }
+	
 /*
  * Tooltip
 */
@@ -232,3 +250,7 @@
 	transform: scale3d(-1,1,1);
 }
 
+.btn-outline:hover {
+	background-color: red !important;
+	color: white !important;
+}
